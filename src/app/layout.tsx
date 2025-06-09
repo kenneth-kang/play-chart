@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -20,9 +21,9 @@ export default function RootLayout({
         <header className="bg-white shadow-sm">
           <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div className="flex items-center">
-              <a href="/" className="text-xl font-bold text-gray-900">
+              <Link href="/" className="text-xl font-bold text-gray-900">
                 Chart Playground
-              </a>
+              </Link>
             </div>
             <div className="flex items-center space-x-4">
               <a href="/search" className="text-gray-600 hover:text-gray-900">
