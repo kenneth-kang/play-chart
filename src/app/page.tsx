@@ -44,6 +44,13 @@ export default function Home() {
   return (
     <div className="space-y-12">
       <section className="text-center">
+        <div className="mb-8">
+          <img 
+            src="/play-chart-img.png" 
+            alt="Play Chart" 
+            className="mx-auto max-w-xl w-1/2 h-[200px] object-cover object-center"
+          />
+        </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
           Data Visualization Playground
         </h1>
