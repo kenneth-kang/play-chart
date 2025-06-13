@@ -23,7 +23,7 @@ export default function RootLayout({
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
                 <img src="/play-chart-logo.png" alt="Play Chart Logo" className="h-8 w-auto mr-2" />
-                <span className="text-xl font-bold text-gray-900">Chart Playground</span>
+                <span className="text-xl font-bold text-gray-900">PlayChart Playground</span>
               </Link>
             </div>
             <div className="flex items-center space-x-4">
