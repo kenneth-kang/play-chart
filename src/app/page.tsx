@@ -6,9 +6,9 @@ const categories = [
     name: 'Basic Charts',
     description: 'Simple and commonly used chart types',
     charts: [
-      { id: 'line', name: 'Line Chart', image: '/charts/line.png' },
-      { id: 'bar', name: 'Bar Chart', image: '/charts/bar.png' },
-      { id: 'pie', name: 'Pie Chart', image: '/charts/pie.png' },
+      { id: 'line', name: 'Line Chart', image: './charts/line-chart.png' },
+      { id: 'bar', name: 'Bar Chart', image: './charts/bar-chart.png' },
+      { id: 'pie', name: 'Pie Chart', image: './charts/pie-chart.png' },
     ],
   },
   {
@@ -16,8 +16,8 @@ const categories = [
     name: 'Mixed Charts',
     description: 'Combinations of different chart types',
     charts: [
-      { id: 'line-bar', name: 'Line & Bar Chart', image: '/charts/line-bar.png' },
-      { id: 'area-line', name: 'Area & Line Chart', image: '/charts/area-line.png' },
+      { id: 'line-bar', name: 'Line & Bar Chart', image: '/charts/mixed-bar-line-chart.png' },
+      { id: 'area-line', name: 'Area & Line Chart', image: '/charts/mixed-area-line-chart.png' },
     ],
   },
   {
@@ -25,8 +25,8 @@ const categories = [
     name: 'Large Data Charts',
     description: 'Charts optimized for large datasets',
     charts: [
-      { id: 'scatter', name: 'Scatter Plot', image: '/charts/scatter.png' },
-      { id: 'heatmap', name: 'Heat Map', image: '/charts/heatmap.png' },
+      { id: 'bigline', name: 'Big Data Line Chart', image: '/charts/big-data-line-chart.png' },
+      // { id: 'heatmap', name: 'Heat Map', image: '/charts/heatmap.png' },
     ],
   },
   {
@@ -34,8 +34,9 @@ const categories = [
     name: 'Special Visualizations',
     description: 'Advanced and specialized chart types',
     charts: [
-      { id: 'radar', name: 'Radar Chart', image: '/charts/radar.png' },
-      { id: 'bubble', name: 'Bubble Chart', image: '/charts/bubble.png' },
+      { id: 'topology', name: 'Topology', image: '/charts/special-topology-chart.png' },
+      // { id: 'radar', name: 'Radar Chart', image: '/charts/radar.png' },
+      // { id: 'bubble', name: 'Bubble Chart', image: '/charts/bubble.png' },
     ],
   },
 ];
@@ -73,11 +74,14 @@ export default function Home() {
                 href={`/chart/${chart.id}`}
                 className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="aspect-video bg-gray-100 rounded-lg mb-4">
-                  {/* Placeholder for chart image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-400">
-                    Chart Preview
-                  </div>
+                <div className="aspect-video bg-gray-100 rounded-lg mb-4 overflow-hidden">
+                  {chart.image && (
+                    <img 
+                      src={chart.image} 
+                      alt={`${chart.name} preview`}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
                 </div>
                 <h3 className="text-lg font-medium text-gray-900">{chart.name}</h3>
               </Link>
