@@ -73,7 +73,7 @@ export default function Home() {
       <section className="text-center">
         <div className="mb-8">
           <img 
-            src="/play-chart-img.png" 
+            src="/play-chart-image.png" 
             alt="Play Chart" 
             className="mx-auto max-w-xl w-1/2 h-[200px] object-cover object-center"
           />
