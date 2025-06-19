@@ -117,7 +117,7 @@ src/
 
 ## Links
 
-- [🔗 GitHub Repository](https://github.com/kenneth-kang/play-chart)
+- [🔗 GitHub Repository](https://github.com/keneth80/play-chart)
 - [🚀 Live Demo (Vercel)](https://play-chart.vercel.app)
 
 ## Contributing
