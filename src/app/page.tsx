@@ -41,6 +41,32 @@ const categories = [
   },
 ];
 
+export const metadata = {
+  title: "Data Visualization Playground - Play Chart",
+  description: "인터랙티브 데이터 시각화 예제 모음. 다양한 차트 예제를 실험해보세요.",
+  openGraph: {
+    title: "Data Visualization Playground - Play Chart",
+    description: "다양한 차트 예제를 실험해보세요.",
+    url: "https://play-chart.vercel.app",
+    images: [
+      {
+        url: "/play-chart-img.png",
+        width: 800,
+        height: 600,
+        alt: "Play Chart Main Image",
+      },
+    ],
+    siteName: "Play Chart",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Data Visualization Playground - Play Chart",
+    description: "다양한 차트 예제를 실험해보세요.",
+    images: ["/play-chart-img.png"],
+  },
+};
+
 export default function Home() {
   return (
     <div className="space-y-12">
