@@ -69,9 +69,9 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 max-w-screen-xl mx-auto px-4">
       <section className="text-center">
-        <div className="mb-8">
+        <div className="mb-8 px-4">
           <img 
             src="/play-chart-image.png" 
             alt="Play Chart" 
@@ -93,7 +93,7 @@ export default function Home() {
             <p className="text-gray-600">{category.description}</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 min-w-0">
             {category.charts.map((chart) => (
               <Link
                 key={chart.id}
