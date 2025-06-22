@@ -75,7 +75,7 @@ export default function Home() {
           <img 
             src="/play-chart-image.png" 
             alt="Play Chart" 
-            className="mx-auto max-w-xl w-1/2 h-[200px] object-cover object-center"
+            className="mx-auto w-full max-w-xs sm:max-w-md md:max-w-xl h-auto object-contain"
           />
         </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
