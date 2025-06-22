@@ -69,13 +69,13 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="space-y-12 max-w-screen-xl mx-auto px-4">
+    <div className="space-y-12 max-w-screen-xl mx-auto px-4 overflow-x-hidden">
       <section className="text-center">
         <div className="mb-8 px-4">
           <img 
             src="/play-chart-image.png" 
             alt="Play Chart" 
-            className="mx-auto w-full max-w-xs sm:max-w-md md:max-w-xl h-auto object-contain"
+            className="mx-auto w-full max-w-full sm:max-w-md md:max-w-xl h-auto object-contain"
           />
         </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -109,7 +109,7 @@ export default function Home() {
                     />
                   )}
                 </div>
-                <h3 className="text-lg font-medium text-gray-900">{chart.name}</h3>
+                <h3 className="text-lg font-medium text-gray-900 break-words">{chart.name}</h3>
               </Link>
             ))}
           </div>
