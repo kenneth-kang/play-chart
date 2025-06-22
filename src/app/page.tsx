@@ -98,7 +98,7 @@ export default function Home() {
               <Link
                 key={chart.id}
                 href={`/chart/${chart.id}`}
-                className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow w-full max-w-full min-w-0"
               >
                 <div className="aspect-video bg-gray-100 rounded-lg mb-4 overflow-hidden">
                   {chart.image && (
@@ -109,7 +109,7 @@ export default function Home() {
                     />
                   )}
                 </div>
-                <h3 className="text-lg font-medium text-gray-900 break-words">{chart.name}</h3>
+                <h3 className="text-lg font-medium text-gray-900 break-words break-all">{chart.name}</h3>
               </Link>
             ))}
           </div>
