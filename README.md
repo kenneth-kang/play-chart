@@ -1,4 +1,4 @@
-## 📁 play-chart
+## 📁 PlayChart
 
 > D3 기반 차트 예제를 탐색하고 실행해볼 수 있는 인터랙티브 오픈소스 사이트  
 > 사용자는 차트 카테고리, 속성, 데이터를 선택하여 다양한 D3.js 시각화 사례를 실험할 수 있습니다.
@@ -117,7 +117,7 @@ src/
 
 ## Links
 
-- [🔗 GitHub Repository](https://github.com/kenneth-kang/play-chart)
+- [🔗 GitHub Repository](https://github.com/keneth80/play-chart)
 - [🚀 Live Demo (Vercel)](https://play-chart.vercel.app)
 
 ## Contributing

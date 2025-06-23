@@ -23,12 +23,17 @@ export default function RootLayout({
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
                 <img src="/play-chart-logo.png" alt="Play Chart Logo" className="h-8 w-auto mr-2" />
-                <span className="text-xl font-bold text-gray-900">PlayChart Playground</span>
+                <span className="text-xl font-bold text-gray-900">PlayChart</span>
               </Link>
             </div>
             <div className="flex items-center space-x-4">
-              <a href="/search" className="text-gray-600 hover:text-gray-900">
-                Search
+              <a 
+                href="https://github.com/keneth80/play-chart" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900"
+              >
+                Source
               </a>
             </div>
           </nav>

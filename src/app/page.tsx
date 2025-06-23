@@ -41,15 +41,41 @@ const categories = [
   },
 ];
 
+export const metadata = {
+  title: "Data Visualization Playground - Play Chart",
+  description: "인터랙티브 데이터 시각화 예제 모음. 다양한 차트 예제를 실험해보세요.",
+  openGraph: {
+    title: "Data Visualization Playground - Play Chart",
+    description: "다양한 차트 예제를 실험해보세요.",
+    url: "https://play-chart.vercel.app",
+    images: [
+      {
+        url: "/play-chart-img.png",
+        width: 800,
+        height: 600,
+        alt: "Play Chart Main Image",
+      },
+    ],
+    siteName: "Play Chart",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Data Visualization Playground - Play Chart",
+    description: "다양한 차트 예제를 실험해보세요.",
+    images: ["/play-chart-img.png"],
+  },
+};
+
 export default function Home() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 max-w-screen-xl mx-auto px-4 overflow-x-hidden">
       <section className="text-center">
-        <div className="mb-8">
+        <div className="mb-8 px-4">
           <img 
-            src="/play-chart-img.png" 
+            src="/play-chart-image.png" 
             alt="Play Chart" 
-            className="mx-auto max-w-xl w-1/2 h-[200px] object-cover object-center"
+            className="mx-auto w-full max-w-full sm:max-w-md md:max-w-xl h-auto object-contain"
           />
         </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -67,12 +93,12 @@ export default function Home() {
             <p className="text-gray-600">{category.description}</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 min-w-0">
             {category.charts.map((chart) => (
               <Link
                 key={chart.id}
                 href={`/chart/${chart.id}`}
-                className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow w-full max-w-full min-w-0"
               >
                 <div className="aspect-video bg-gray-100 rounded-lg mb-4 overflow-hidden">
                   {chart.image && (
@@ -83,7 +109,7 @@ export default function Home() {
                     />
                   )}
                 </div>
-                <h3 className="text-lg font-medium text-gray-900">{chart.name}</h3>
+                <h3 className="text-lg font-medium text-gray-900 break-words break-all">{chart.name}</h3>
               </Link>
             ))}
           </div>
