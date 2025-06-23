@@ -6,9 +6,11 @@ export default function ChartLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex gap-8">
-      <ChartSidebar />
-      <div className="flex-1">
+    <div className="flex flex-col md:flex-row gap-8 min-w-0">
+      <div className="w-full md:w-56 flex-shrink-0">
+        <ChartSidebar />
+      </div>
+      <div className="flex-1 min-w-0">
         {children}
       </div>
     </div>
