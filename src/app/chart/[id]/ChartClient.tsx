@@ -62,16 +62,16 @@ export default function ChartClient({ id }: { id: string }) {
 
   return (
     <div className="space-y-8">
-      <div className="bg-white p-6 rounded-lg shadow-sm">
+      <div className="bg-white p-6 rounded-lg shadow-sm overflow-x-auto">
         <h1 className="text-2xl font-semibold text-gray-900 mb-4">
           {id.charAt(0).toUpperCase() + id.slice(1)} Chart
         </h1>
-        <div className="aspect-video">
+        <div className="aspect-video w-full min-w-0">
           <Line options={options} data={chartData} />
         </div>
       </div>
 
-      <div className="bg-white p-6 rounded-lg shadow-sm">
+      <div className="bg-white p-6 rounded-lg shadow-sm overflow-x-auto">
         <h2 className="text-xl font-semibold text-gray-900 mb-4">Playground</h2>
         <div className="space-y-4">
           <div>
